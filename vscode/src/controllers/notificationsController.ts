@@ -18,6 +18,7 @@ export class NotificationsController implements Disposable {
 	private _disposable: Disposable;
 
 	constructor() {
+		// TODO: Add settings to turn these on/off individually.
 		this._disposable = Disposable.from(
 			Container.session.onDidChangePosts(this.onSessionPostsReceived, this),
 			Container.session.onDidChangePullRequests(this.onSessionPullRequestsReceived, this),
