@@ -49,6 +49,7 @@ export class CodeStreamCodeActionProvider implements CodeActionProvider, Disposa
 				break;
 		}
 	}
+	// TODO: on settings change - if code actions disabled, dispose code actions.
 
 	provideCodeActions(
 		_document: TextDocument,
